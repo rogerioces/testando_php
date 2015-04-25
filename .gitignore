@@ -1,0 +1,5 @@
+#Ignorar os arquivos que o Eclipse PHp cria automaticamente. Este projeto foi iniciado usando esta ferramenta
+	.buildpath
+	.metadata/
+	.settings/
+
