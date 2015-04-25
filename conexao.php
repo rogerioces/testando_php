@@ -1,4 +1,7 @@
 <?php
+/* Arquivo de conexão com o banco de dados Mysql
+ * 
+ */
    function conexao () {
 	$banco 	   = "testando";  //informar o banco a se conectar
 	$usuario   = "root";  //informar o usuario do banco
