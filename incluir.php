@@ -4,7 +4,7 @@
 <title>Index - Funcionalidades</title>
 </head>
 <body>
-/* Formulario com nome, sobrenome 
+/* Formulario com nome, sobrenome e botão para enviar os dados
 
 */
 <form method="POST" enctype="multipart/form-data" action="incluir_bd.php">
