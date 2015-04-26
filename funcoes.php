@@ -8,4 +8,8 @@ function inserir($sql) { //verifica se o comando de inserir sql foi informado
 	}
 	
 }
+
+function seleciona($sql){
+	return mysql_query($sql);
+}
 ?>

@@ -7,6 +7,7 @@
 <?php
 	echo "Olá Mundo!!! <br/>"; 
 ?>
-<a href="incluir.php">Incluir cliente</a>
+<a href="incluir.php">Incluir cliente</a><br />
+<a href="seleciona.php">Trazer registros cadastrados na tabela CLIENTES</a>
 </body>
 </html>
