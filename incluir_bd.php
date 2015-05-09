@@ -19,6 +19,8 @@
 		
 		if (inserir($sql_inserir)){ //chama a funcao inserir, arquivo funcoes.php
 			echo ("Registro inserido com sucesso! ID do registro: " .mysql_insert_id() ."<br />"); // Inclui o registro e exibe o ID do registro 
+			$guardaLog = $nome. "|" . $sobrenome; //Vai guardar as variaveis selecionadas num array para serem utilizadas no log
+			atualizaLog($guardaLog); //Chama a função atualizaLog, do arquivo funcoes, que vai gravar os dados informados no array $guardaLog
 			unset($_POST['enviar']); //limpa os dados enviados pelo formulario
 			}else {
 				echo ("Erro na rotina de inserção!!! " .mysql_error()) ."<br />"; // Exibe que nao foi inserido o registro e informa qual o erro

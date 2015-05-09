@@ -5,6 +5,8 @@ if (isset($_POST['atualizar'])){ //Se os dados do formularios por post forem de 
 	$sql_atualizabd = "UPDATE CLIENTES SET nome ='" . $_POST['nome']."', sobrenome='".$_POST['sobrenome']."' WHERE id=" . $_POST['id']; // Vai atualizar o registro com o novo nome, e sobrenome informados
 	echo $sql_atualizabd; // Imprime o SQL retornado na tela;
 	atualizar($sql_atualizabd); //Chama a funcao atualizar, passando o SQL de update
+	$guardaLog = $_POST['nome']. "|" . $_POST['sobrenome'] . "|" . $_POST['id']; //Vai guardar as variaveis selecionadas num array para serem utilizadas no log
+	atualizaLog($guardaLog); //Chama a função atualizaLog, do arquivo funcoes, que vai gravar os dados informados no array $guardaLog
 	unset($_POST['atualizar']); // Apos ter feito o update, o unset vai limpar as variavies usadas nas codições. Com isso nao vai ter dados no formulario e ele nao ira aparecer mais apos ter feito o update 
 	unset($_GET['acao']);       
 	unset($_GET['id']);
