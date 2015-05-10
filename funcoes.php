@@ -49,7 +49,7 @@ function atualizaLog($guardaLog){
 	// "a" representa que o arquivo é aberto para ser escrito
 	$fp = fopen("../testando/log/log.log", "a");  //abre o conteudo de log.log dentro da pasta log de testando
   	
-	//Se valor de $ contagemArray for menor ou igual a 2, veio da tela de inclusão; senao, veio da tela de alteração
+	//Se valor de $ contagemArray for igual a 2, veio da tela de inclusão; se for igual a 3, veio da tela de alteração; senao, veio da tela de exclusão
 	if ($contagemArray  == 2){
 		// Escreve o conteudo das variaveis no arquivo log.log. No final quebra uma linha
 		$escreve = fwrite($fp, "Inclusão - " . "Nome: " . $dados[0] . " Sobrenome: " . $dados[1] .  " " . $today . "\n");

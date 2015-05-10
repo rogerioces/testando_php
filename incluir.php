@@ -12,7 +12,6 @@
 	<input type="submit" name="enviar" value="Cadastrar" /> <br />
 </form>
 <a href="index.php">Voltar para a home</a>
-
 </body>
 </html>
 

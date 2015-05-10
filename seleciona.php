@@ -32,10 +32,8 @@ if ((isset ($_GET['acao'])) && ($_GET['acao'] == 'alterar') && (isset($_GET['id'
 			       <input type="hidden" name="id" value="<?php echo ($resupdate['id']) ?>" />
 		<input type="submit" name="atualizar" value="Atualizar" /> <br /> <!-- Formulario de nome atualizar com valuor Atualizar -->
 	</form>
-    <?php 
-    
+    <?php    
     }	
-	
 }
 
 //Para excluir o registro selecionado
@@ -52,11 +50,8 @@ if ((isset ($_GET['acao'])) && ($_GET['acao'] == 'excluir') && (isset($_GET['id'
 	atualizaLog($guardaLog); //Chama a função atualizaLog, do arquivo funcoes, que vai gravar os dados informados no array $guardaLog
 	unset($_POST['excluir']); // Apos ter feito o update, o unset vai limpar as variavies usadas nas codições. Com isso nao vai ter dados no formulario e ele nao ira aparecer mais apos ter feito o update
 	unset($_GET['acao']);
-	unset($_GET['id']);
-	
+	unset($_GET['id']);	
 }
-
-
 ?>
 <?php 
 $sql_seleciona = "SELECT * FROM CLIENTES"; //pesquisa por todos os registros da tabela CLIENTES e armazena na variavel $sql_seleciona
